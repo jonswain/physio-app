@@ -1,0 +1,4 @@
+name: physio-app
+dependencies:
+  - python=3.12.8
+  - streamlit=1.41.1
