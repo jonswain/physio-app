@@ -15,7 +15,7 @@ if st.button("Go"):
     # Countdown
     for i in range(3, 0, -1):
         placeholder.markdown(
-            f"<h1 style='font-size:40px; text-align:center;'>{i}</h1>",
+            f"<h1 style='font-size:400px; text-align:center;'>{i}</h1>",
             unsafe_allow_html=True,
         )
         time.sleep(1)
@@ -24,12 +24,12 @@ if st.button("Go"):
     end_time = time.time() + timer
     while time.time() < end_time:
         placeholder.markdown(
-            f"<h1 style='font-size:40px; text-align:center;'>{"🟥"}</h1>",
+            f"<h1 style='font-size:400px; text-align:center;'>{"🟥"}</h1>",
             unsafe_allow_html=True,
         )
         time.sleep(0.1)
         placeholder.markdown(
-            f"<h1 style='font-size:40px; text-align:center;'>{random.choice(directions)}</h1>",
+            f"<h1 style='font-size:400px; text-align:center;'>{random.choice(directions)}</h1>",
             unsafe_allow_html=True,
         )
         time.sleep(delay - 0.1)
