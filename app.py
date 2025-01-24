@@ -24,7 +24,12 @@ if st.button("Go"):
     end_time = time.time() + timer
     while time.time() < end_time:
         placeholder.markdown(
+            f"<h1 style='font-size:40px; text-align:center;'>{"🟥"}</h1>",
+            unsafe_allow_html=True,
+        )
+        time.sleep(0.1)
+        placeholder.markdown(
             f"<h1 style='font-size:40px; text-align:center;'>{random.choice(directions)}</h1>",
             unsafe_allow_html=True,
         )
-        time.sleep(delay)
+        time.sleep(delay - 0.1)
