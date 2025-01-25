@@ -27,9 +27,13 @@ if st.button("Go"):
             f"<h1 style='font-size:300px; text-align:center;'>{"🟥"}</h1>",
             unsafe_allow_html=True,
         )
-        time.sleep(0.1)
+        time.sleep(0.2)
         placeholder.markdown(
             f"<h1 style='font-size:300px; text-align:center;'>{random.choice(directions)}</h1>",
             unsafe_allow_html=True,
         )
-        time.sleep(delay - 0.1)
+        time.sleep(delay - 0.2)
+    placeholder.markdown(
+            f"<h1 style='font-size:300px; text-align:center;'>{"✅"}</h1>",
+            unsafe_allow_html=True,
+        )
