@@ -6,7 +6,7 @@ import time
 import streamlit as st
 
 delay = st.number_input("Select delay", min_value=1, max_value=10, value=3)
-timer = st.number_input("Select exercise time", min_value=1, max_value=60, value=30)
+timer = st.number_input("Select exercise time", min_value=1, max_value=60, value=60)
 directions = ["⬆️", "⬇️", "⬅️", "➡️"]
 
 if st.button("Go"):
